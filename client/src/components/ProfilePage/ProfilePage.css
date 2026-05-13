@@ -1,0 +1,42 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  .profile-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .profile-card {
+    flex: 1;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .profile-info {
+    margin-top: 20px;
+  }
+  .btn-profile {
+    margin-top: 10px;
+  }
+  .extra-info {
+    flex: 1;
+    display: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  /* Adjust the position of the watchlist div */
+  #watchlistDiv {
+    margin-left: 20px; /* You can adjust this value as needed */
+  }
+  #favouriteListDiv {
+    margin-left: 20px; /* You can adjust this value as needed */
+  }

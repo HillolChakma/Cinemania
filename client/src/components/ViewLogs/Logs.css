@@ -1,0 +1,19 @@
+.movieforwatch {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #1b1818;
+  }
+  
+  .movieforwatch-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .movieforwatch:hover {
+    transform: scale(1.05); /* Increase the size by 5% */
+    transition: transform 0.3s ease-in-out; /* Animation */
+}
+.movie-title {
+    padding-left: 30px; /* or use margin-left if you prefer */
+}
+  

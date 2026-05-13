@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.big-column {
+    flex: 2;
+    padding: 10px;
+}
+.white-text, .white-text label {
+    color: white !important;
+}
+
+  
+
+  

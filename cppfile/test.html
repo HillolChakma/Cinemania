@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Rows and Columns</title>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .big-column {
+            flex: 2;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <!-- upper layout-->
+
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Left buttons -->
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">
+              Home
+            </a>
+            <a class="nav-link" href="#">
+              About
+            </a>
+          </div>
+
+          <!-- Right button and link -->
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#">
+              Log in as admin?
+            </a>
+            <button class="btn btn-outline-primary" type="button">
+              <a href="#">Log in</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ekhane login page ache -->
+      <div class="container">
+        <div class="login-container">
+          <h2 class="login-header">Register</h2>
+
+          <!-- form er onsubmit deya lagey + function call hobey -->
+
+          <form action ="" method="post" onSubmit={handleSubmit}>
+            <div class="row">
+              <div class="column">
+                <div class="mb-3">
+                  <label for="fname" class="form-label">
+                    First Name:
+                  </label>
+                  <input onChange={handleInput}
+                    type="text"
+                    class="form-control"
+                    id="fname"
+                    name="fname"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="lname" class="form-label">
+                    Last Name:
+                  </label>
+                  <input onChange={handleInput}
+                    type="text"
+                    class="form-control"
+                    id="lname"
+                    name="lname"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="dob" class="form-label">
+                    Date of Birth:
+                  </label>
+                  <input onChange={handleInput}
+                    type="text"
+                    class="form-control"
+                    id="dob"
+                    name="dob"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">
+                    Email:
+                  </label>
+                  <input onChange={handleInput}
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="column">
+                <div class="mb-3">
+                  <label for="country" class="form-label">
+                    Country:
+                  </label>
+                  <select onChange={handleInput}
+                    class="form-select"
+                    id="country"
+                    name="country"
+                    data-live-search="true"
+                  >
+                    <!-- Add options for each country -->
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="india">India</option>
+                    <option value="korea">Korea</option>
+                    <option value="china">China</option>
+                    <!-- Add more options as needed -->
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="gen" class="form-label">
+                    Gender:
+                  </label>
+                  <select onChange={ handleInput}
+                    class="form-select"
+                    id="gen"
+                    name="gen"
+                    data-live-search="true"
+                  >
+                    <!-- Add options for each country -->
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <!-- Add more options as needed -->
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="username" class="form-label">
+                    Username:
+                  </label>
+                  <input onChange={handleInput}
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">
+                    Password:
+                  </label>
+                  <input onChange={handleInput}
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- type submit deya lagey, eita bootstrap er function -->
+
+            <button type = "submit" >Register</button>
+          </form>
+
+          <!-- "Don't have an account?" link and "Register" button -->
+          <div class="register-link">
+            <p>
+              Have an account?{" "}
+              <a href="#">click here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

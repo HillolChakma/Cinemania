@@ -1,0 +1,72 @@
+.OUTER {
+    font-family: 'Your Desired Font', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #360033, #0b8793);
+}
+
+
+
+
+
+
+
+.admin-menu {
+    margin-top: 0px;
+    font-family: Impact, sans-serif;
+}
+
+.page-buttons2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn2 {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 20px 75px;
+    border: 1px solid #905f7f;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    font-family: Impact, sans-serif;
+    width : 250px
+}
+
+.btn2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    z-index: -1;
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(62, 8, 8, 0.3);
+}
+
+.btn2 span {
+    position: relative;
+   
+    z-index: 1;
+    color: #fff;
+}
+
+/* Add more specific styling for the primary and secondary buttons if needed */
+.btn-primary {
+    background-color: #260022;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+

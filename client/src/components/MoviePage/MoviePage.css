@@ -1,0 +1,309 @@
+.container {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  top: -200px;
+  background-color: #d6802f;
+  color: rgb(160, 90, 29);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.genreDiv {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  top: -210px;
+  background-color: #1a69b7;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.containerForActor {
+  position: absolute;
+  right: 200px; /* Adjust as needed */
+  top: -100px; /* Align with genre button */
+}
+
+.buttonActor {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.cell {
+  flex: 1;
+  text-align: center;
+}
+
+
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5; /* Light text */
+}
+.movie {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.movie__intro {
+    width: 110%;
+}
+
+.movie__backdrop {
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    object-position: 0 35%;
+}
+
+.movie__detail {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 225px;
+}
+
+.movie__detailLeft {
+    margin-right: 30px;
+}
+
+.movie__poster {
+    width:300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+    color: #f5f5f5; /* Light text */
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content:space-between ;
+}
+
+.movie__detailRightTop > div{
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+
+.movie__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.movie__voteCount {
+    margin-left: 1rem;
+}
+
+.movie__genres {
+    margin: 1.25rem 0;
+}
+
+.movie__genre {
+    padding: .5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+
+.movie__detailRightBottom {
+    margin: 2rem 0;
+    flex: 0.8;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #f5f5f5; /* Light text */
+}
+.synopsisText > div:last-of-type {
+    margin-left: auto;
+}
+
+.movie__links {
+    position: relative;
+    bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.movie__heading {
+    font-size: 2.2rem;
+}
+
+.movie__Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    color: #f5f5f5; /* Light text */
+    font-weight: bold;
+}
+
+.movie__homeButton {
+    background-color:rgb(255, 0, 0);
+    
+}
+
+.movie__imdbButton {
+    background-color:#f3ce13;
+}
+
+.newTab {
+    margin-left: 1.4rem;
+}
+
+.movie__production {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+}
+
+
+.movie__productionComapany {
+    width: 200px;
+    margin: 2rem;
+}
+
+.productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.syntext {
+    color: #f5f5f5; /* Light text */
+}
+
+
+.container {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    left: calc(2.5% + 10px); /* Position it to the right of the button */
+    top: -200px;  /* Adjust this value as needed */
+    background-color: #d6802f;
+    color: rgb(160, 90, 29);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* Ensure that the button is above other elements */
+  }
+
+  .genreDiv {
+    position: absolute; /* Change from fixed to absolute */
+    left: calc(10.5% + 10px); /* Position it to the right of the button */
+    top: -210px; /* Align it to the top of the button */
+    /* Your existing genreDiv styles */
+    
+  background-color: #1a69b7;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; /* Set the width to match the button */
+  z-index: 1; /* Ensure that the rows are above other elements */
+  overflow-y: auto; /* Add a scrollbar if the content overflows vertically */
+}
+
+.containerForActor {
+    position: relative;
+}
+.buttonActor {
+    position: relative;
+    top: -20px;
+    left: calc(9% + 10px);
+}
+
+  
+
+
+
+
+  .custom-card {
+    background-color: #f8f9fa; /* Background color */
+    color: #212529; /* Text color */
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for box shadow and background color */
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger box shadow on hover for more pronounced 3D effect */
+    background-color: #e9ecef; /* Background color on hover */
+  }
+  
+  .card-body {
+    padding: 1rem; /* Padding for the card body */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Font size for the title */
+    margin-bottom: 0.5rem; /* Bottom margin for the title */
+    color: #343a40; /* Title text color */
+  }
+  
+  .card-text {
+    color: #6c757d; /* Text color for the card content */
+  }
+  
+
+  input[type="radio"]{
+    display: none ;
+}
+
+.star{
+    cursor: pointer;
+}
+.genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -220px;
+    margin-left: 165px;
+  }
+  
+  .genre-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .genre-cell {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
